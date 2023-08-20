@@ -1,0 +1,1356 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Rozha+One&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #FBF8EC;
+}
+
+.container {
+  max-width: 1248px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-2 {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  z-index: 0;
+}
+
+header {
+  z-index: 0;
+  opacity: 5;
+  height: 200px;
+  background-image: url(../../assets/images/index/Group\ 7100.png);
+}
+header .header {
+  display: flex;
+  z-index: 0;
+}
+header .header img {
+  width: 303px;
+  height: 202px;
+  z-index: 0;
+  filter: drop-shadow(5px 11px 16px rgba(0, 0, 0, 0.2));
+}
+header .header span {
+  padding-top: 68px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.promotion {
+  margin-top: 76px;
+}
+.promotion .promotion-title {
+  display: flex;
+}
+.promotion .promotion-title h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.promotion .promotion-title a {
+  gap: 16px;
+  margin-left: auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #606060;
+}
+.promotion .promotion-cards {
+  margin-top: 40px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+.promotion .promotion-cards .card {
+  padding: 0px;
+  width: 272px;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.promotion .promotion-cards .card .product {
+  display: inline-block;
+}
+.promotion .promotion-cards .card .like {
+  margin-top: 14px;
+  margin-left: 237px;
+  position: absolute;
+}
+.promotion .promotion-cards .card .like:hover {
+  color: red;
+  border-color: red;
+}
+.promotion .promotion-cards .card .percent {
+  margin-top: 118px;
+  margin-left: 10px;
+  width: 56px;
+  height: 32px;
+  padding: 4px 8px;
+  gap: 10px;
+  border-radius: 4px;
+  position: absolute;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  background: #FF6633;
+  color: white;
+}
+.promotion .promotion-cards .card .discount {
+  margin-top: 11px;
+  display: flex;
+  gap: 126px;
+}
+.promotion .promotion-cards .card .discount .with-card {
+  margin-left: 8px;
+}
+.promotion .promotion-cards .card .discount .with-card h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+.promotion .promotion-cards .card .discount .cash {
+  margin-right: 8px;
+}
+.promotion .promotion-cards .card .discount .cash h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #606060;
+}
+.promotion .promotion-cards .card .discount p {
+  width: 71px;
+  height: 18px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #BFBFBF;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.promotion .promotion-cards .card .title {
+  margin-left: 8px;
+  width: 256px;
+  height: 48px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.promotion .promotion-cards .card .star {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.promotion .promotion-cards .card button {
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 256px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 2px solid #70C05B;
+}
+.promotion .promotion-cards .card button a {
+  padding: 8px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70C05B;
+}
+.promotion .promotion-cards .card button:hover {
+  background: #FF6633;
+  border-color: transparent;
+}
+.promotion .promotion-cards .card button:hover a {
+  color: white;
+}
+
+@media (max-width: 1150px) {
+  .promotion .promotion-cards {
+    gap: 32px;
+  }
+  .promotion .promotion-cards .card {
+    width: 224px;
+    height: 349px;
+  }
+  .promotion .promotion-cards .card .product {
+    display: inline-block;
+    width: 224px;
+    height: 160px;
+  }
+  .promotion .promotion-cards .card .like {
+    margin-left: 189px;
+    margin-right: auto;
+  }
+  .promotion .promotion-cards .card .discount .cash {
+    margin-left: -50px;
+  }
+  .promotion .promotion-cards .card .title {
+    width: 208px;
+    height: 48px;
+  }
+  .promotion .promotion-cards .card .star {
+    margin-top: 18px;
+  }
+  .promotion .promotion-cards .card button {
+    width: 208px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  .promotion .promotion-cards .card:nth-child(4) {
+    display: none;
+  }
+  .header img {
+    display: none;
+  }
+  .header span {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .header img {
+    display: none;
+  }
+  .header span {
+    width: 582px;
+    height: 10px;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+  }
+  .promotion .promotion-cards {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+  .promotion .promotion-cards .card:nth-child(4) {
+    display: flex;
+  }
+}
+@media (max-width: 535px) {
+  .promotion {
+    align-items: center;
+    justify-content: center;
+  }
+  .promotion .promotion-cards .card {
+    width: 160px;
+    height: 343px;
+  }
+  .promotion .promotion-cards .card .product {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+  }
+  .promotion .promotion-cards .card .like {
+    display: inline-block;
+    margin-left: 130px;
+    margin-right: auto;
+  }
+  .promotion .promotion-cards .card .percent {
+    width: 46px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 150%;
+    font-family: "Rubik";
+  }
+  .promotion .promotion-cards .card .discount {
+    display: flex;
+    gap: 70px;
+  }
+  .promotion .promotion-cards .card .discount .with-card h4, .promotion .promotion-cards .card .discount .cash h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    font-family: "Rubik";
+  }
+  .promotion .promotion-cards .card .discount .with-card p, .promotion .promotion-cards .card .discount .cash p {
+    padding-left: -50px;
+    font-size: 8px;
+    line-height: 150%;
+  }
+  .promotion .promotion-cards .card .title {
+    width: 144px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .promotion .promotion-cards .card button {
+    width: 144px;
+    height: 40px;
+  }
+}
+.new {
+  margin-top: 120px;
+}
+.new .new-title {
+  display: flex;
+}
+.new .new-title h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.new .new-title a {
+  gap: 16px;
+  margin-left: auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #606060;
+}
+.new .new-cards {
+  margin-top: 40px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+.new .new-cards .card {
+  padding: 0px;
+  width: 272px;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.new .new-cards .card .product {
+  display: inline-block;
+}
+.new .new-cards .card .like {
+  margin-top: 14px;
+  margin-left: 237px;
+  position: absolute;
+}
+.new .new-cards .card .like:hover {
+  color: red;
+  border-color: red;
+}
+.new .new-cards .card .percent {
+  margin-top: 118px;
+  margin-left: 10px;
+  width: 56px;
+  height: 32px;
+  padding: 4px 8px;
+  gap: 10px;
+  border-radius: 4px;
+  position: absolute;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  background: #FF6633;
+  color: white;
+}
+.new .new-cards .card .discount {
+  margin-top: 11px;
+  display: flex;
+  gap: 126px;
+}
+.new .new-cards .card .discount .with-card {
+  margin-left: 8px;
+}
+.new .new-cards .card .discount .with-card h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+.new .new-cards .card .discount .cash {
+  margin-right: 8px;
+}
+.new .new-cards .card .discount .cash h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #606060;
+}
+.new .new-cards .card .discount p {
+  width: 71px;
+  height: 18px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #BFBFBF;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.new .new-cards .card .title {
+  margin-left: 8px;
+  width: 256px;
+  height: 48px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.new .new-cards .card .star {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.new .new-cards .card button {
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 256px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 2px solid #70C05B;
+}
+.new .new-cards .card button a {
+  padding: 8px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70C05B;
+}
+.new .new-cards .card button:hover {
+  background: #FF6633;
+  border-color: transparent;
+}
+.new .new-cards .card button:hover a {
+  color: white;
+}
+
+@media (max-width: 1150px) {
+  .new .new-cards {
+    gap: 32px;
+  }
+  .new .new-cards .card {
+    width: 224px;
+    height: 349px;
+  }
+  .new .new-cards .card .product {
+    display: inline-block;
+    width: 224px;
+    height: 160px;
+  }
+  .new .new-cards .card .like {
+    margin-left: 189px;
+    margin-right: auto;
+  }
+  .new .new-cards .card .discount .cash {
+    margin-left: -50px;
+  }
+  .new .new-cards .card .title {
+    width: 208px;
+    height: 48px;
+  }
+  .new .new-cards .card .star {
+    margin-top: 18px;
+  }
+  .new .new-cards .card button {
+    width: 208px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  .new .new-cards .card:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .new .new-cards {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+  .new .new-cards .card:nth-child(4) {
+    display: flex;
+  }
+}
+@media (max-width: 535px) {
+  .new {
+    align-items: center;
+    justify-content: center;
+  }
+  .new .new-cards .card {
+    width: 160px;
+    height: 343px;
+  }
+  .new .new-cards .card .product {
+    display: inline-block;
+    width: 160px;
+    height: 130px;
+  }
+  .new .new-cards .card .like {
+    display: inline-block;
+    margin-left: 130px;
+    margin-right: auto;
+  }
+  .new .new-cards .card .discount {
+    display: flex;
+    gap: 70px;
+  }
+  .new .new-cards .card .discount .with-card h4, .new .new-cards .card .discount .cash h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    font-family: "Rubik";
+  }
+  .new .new-cards .card .discount .with-card p, .new .new-cards .card .discount .cash p {
+    padding-left: -50px;
+    font-size: 8px;
+    line-height: 150%;
+  }
+  .new .new-cards .card .title {
+    width: 144px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .new .new-cards .card button {
+    width: 144px;
+    height: 40px;
+  }
+}
+.bought-before {
+  margin-top: 120px;
+}
+.bought-before .bought-before-title {
+  display: flex;
+}
+.bought-before .bought-before-title h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.bought-before .bought-before-title a {
+  gap: 16px;
+  margin-left: auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #606060;
+}
+.bought-before .bought-before-cards {
+  margin-top: 40px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+.bought-before .bought-before-cards .card {
+  padding: 0px;
+  width: 272px;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.bought-before .bought-before-cards .card .product {
+  display: inline-block;
+}
+.bought-before .bought-before-cards .card .like {
+  margin-top: 14px;
+  margin-left: 237px;
+  position: absolute;
+}
+.bought-before .bought-before-cards .card .like:hover {
+  color: red;
+  border-color: red;
+}
+.bought-before .bought-before-cards .card .percent {
+  margin-top: 118px;
+  margin-left: 10px;
+  width: 56px;
+  height: 32px;
+  padding: 4px 8px;
+  gap: 10px;
+  border-radius: 4px;
+  position: absolute;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  background: #FF6633;
+  color: white;
+}
+.bought-before .bought-before-cards .card .discount {
+  margin-top: 11px;
+  display: flex;
+  gap: 126px;
+}
+.bought-before .bought-before-cards .card .discount .with-card {
+  margin-left: 8px;
+}
+.bought-before .bought-before-cards .card .discount .with-card h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+.bought-before .bought-before-cards .card .discount .cash {
+  margin-right: 8px;
+}
+.bought-before .bought-before-cards .card .discount .cash h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #606060;
+}
+.bought-before .bought-before-cards .card .discount p {
+  width: 71px;
+  height: 18px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #BFBFBF;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.bought-before .bought-before-cards .card .title {
+  margin-left: 8px;
+  width: 256px;
+  height: 48px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.bought-before .bought-before-cards .card .star {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.bought-before .bought-before-cards .card button {
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 256px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 2px solid #70C05B;
+}
+.bought-before .bought-before-cards .card button a {
+  padding: 8px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70C05B;
+}
+.bought-before .bought-before-cards .card button:hover {
+  background: #FF6633;
+  border-color: transparent;
+}
+.bought-before .bought-before-cards .card button:hover a {
+  color: white;
+}
+
+@media (max-width: 1150px) {
+  .bought-before .bought-before-cards {
+    gap: 32px;
+  }
+  .bought-before .bought-before-cards .card {
+    width: 224px;
+    height: 349px;
+  }
+  .bought-before .bought-before-cards .card .product {
+    display: inline-block;
+    width: 224px;
+    height: 160px;
+  }
+  .bought-before .bought-before-cards .card .like {
+    margin-left: 189px;
+    margin-right: auto;
+  }
+  .bought-before .bought-before-cards .card .discount .cash {
+    margin-left: -50px;
+  }
+  .bought-before .bought-before-cards .card .title {
+    width: 208px;
+    height: 48px;
+  }
+  .bought-before .bought-before-cards .card .star {
+    margin-top: 18px;
+  }
+  .bought-before .bought-before-cards .card button {
+    width: 208px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  .bought-before .bought-before-cards .card:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .bought-before .bought-before-title h3 {
+    width: 180px;
+  }
+  .bought-before .bought-before-cards {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+  .bought-before .bought-before-cards .card:nth-child(4) {
+    display: flex;
+  }
+}
+@media (max-width: 535px) {
+  .bought-before {
+    align-items: center;
+    justify-content: center;
+  }
+  .bought-before .bought-before-cards .card {
+    width: 160px;
+    height: 343px;
+  }
+  .bought-before .bought-before-cards .card .product {
+    display: inline-block;
+    width: 160px;
+    height: 130px;
+  }
+  .bought-before .bought-before-cards .card .like {
+    display: inline-block;
+    margin-left: 130px;
+    margin-right: auto;
+  }
+  .bought-before .bought-before-cards .card .discount {
+    display: flex;
+    gap: 70px;
+  }
+  .bought-before .bought-before-cards .card .discount .with-card h4, .bought-before .bought-before-cards .card .discount .cash h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    font-family: "Rubik";
+  }
+  .bought-before .bought-before-cards .card .discount .with-card p, .bought-before .bought-before-cards .card .discount .cash p {
+    padding-left: -50px;
+    font-size: 8px;
+    line-height: 150%;
+  }
+  .bought-before .bought-before-cards .card .title {
+    width: 144px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .bought-before .bought-before-cards .card button {
+    width: 144px;
+    height: 40px;
+  }
+}
+.offer {
+  margin-top: 120px;
+}
+.offer h4 {
+  font-size: 36px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--main-on-surface, #414141);
+}
+.offer .offer-row {
+  margin-top: 40px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer .offer-row .offer-left, .offer .offer-row .offer-right {
+  width: 584px;
+  display: flex;
+}
+.offer .offer-row .offer-left h5, .offer .offer-row .offer-right h5 {
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 24px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--main-on-surface, #414141);
+}
+.offer .offer-row .offer-left p, .offer .offer-row .offer-right p {
+  width: 258px;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 16px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--main-on-surface, #414141);
+}
+.offer .offer-row .offer-left {
+  border-radius: 4px;
+  background: var(--main-primary-muted, #FCD5BA);
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+}
+.offer .offer-row .offer-right {
+  border-radius: 4px;
+  background: var(--main-secondary-muted, #E5FFDE);
+}
+
+@media (max-width: 1150px) {
+  .offer h4 {
+    font-size: 24px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .offer .offer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .offer .offer-row .offer-left, .offer .offer-row .offer-right {
+    width: 355px;
+    height: 170px;
+  }
+  .offer .offer-row .offer-left h5, .offer .offer-row .offer-right h5 {
+    width: 130px;
+    font-size: 18px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .offer .offer-row .offer-left p, .offer .offer-row .offer-right p {
+    width: 170px;
+    margin-top: -4px;
+    font-size: 12px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .offer .offer-row .offer-left {
+    overflow: hidden;
+  }
+  .offer .offer-row .offer-left img {
+    margin-top: 30px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 110px;
+    transform: rotate(13.866deg);
+    flex-shrink: 0;
+  }
+  .offer .offer-row .offer-right img {
+    margin-top: 30px;
+    display: inline-block;
+    width: 132px;
+    height: 126px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 750px) {
+  .offer .offer-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.location {
+  margin-top: 120px;
+}
+.location h4 {
+  font-size: 36px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--main-on-surface, #414141);
+}
+.location .ap-tab {
+  margin-top: 40px;
+}
+.location .ap-tab .ap-tab-list {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+.location .ap-tab .ap-tab-list li {
+  padding: 8px;
+  border-radius: 4px;
+  background: var(--grayscale-lightest, #F3F2F1);
+}
+.location .ap-tab .ap-tab-list li:hover {
+  background: var(--main-secondary, #70C05B);
+}
+.location .ap-tab .ap-tab-list li a {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--grayscale-hardest, #606060);
+}
+.location .ap-tab .ap-tab-list li a:hover {
+  color: var(--main-on-secondary, #FFF);
+}
+.location .ap-tab .ap-tab-container .ap-tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location .ap-tab .ap-tab-container .ap-tab-content iframe {
+  display: inline-block;
+  width: 100%;
+  height: 354px;
+}
+
+@media (max-width: 750px) {
+  .location .ap-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+}
+.article {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.article .article-title {
+  display: flex;
+}
+.article .article-title h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.article .article-title a {
+  gap: 16px;
+  margin-left: auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #606060;
+}
+.article .article-cards {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.article .article-cards .card {
+  width: 376px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+}
+.article .article-cards .card img {
+  width: 376px;
+  height: 162px;
+}
+.article .article-cards .card .article-text {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.article .article-cards .card .article-text span {
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--grayscale-hard, #8F8F8F);
+}
+.article .article-cards .card .article-text h5 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--main-on-surface, #414141);
+}
+.article .article-cards .card .article-text p {
+  margin-top: 10px;
+  font-size: 16px;
+  height: 100px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--main-on-surface, #414141);
+}
+.article .article-cards .card .article-text button {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  background: var(--main-secondary-muted, #E5FFDE);
+}
+.article .article-cards .card .article-text button a {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--main-secondary, #70C05B);
+}
+.article .article-cards .card .article-text button:hover {
+  background: var(--main-secondary, #70C05B);
+}
+.article .article-cards .card .article-text button:hover a {
+  color: var(--main-on-secondary, #FFF);
+}
+.article .article-cards .card .article-text .article-btn-2 {
+  margin-top: 33px;
+}
+
+@media (max-width: 1150px) {
+  .article .article-cards {
+    gap: 32px;
+  }
+  .article .article-cards .card {
+    width: 224px;
+    height: 100%;
+  }
+  .article .article-cards .card img {
+    display: inline-block;
+    width: 224px;
+    height: 156px;
+  }
+  .article .article-cards .card .article-img-1 {
+    display: inline-block;
+    height: 156px;
+  }
+  .article .article-cards .card span {
+    font-size: 8px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .article .article-cards .card h5 {
+    width: 215px;
+    font-size: 16px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .article .article-cards .card p {
+    margin-bottom: 70px;
+    width: 204px;
+    font-size: 12px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .article .article-cards .card button {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .article {
+    justify-content: center;
+  }
+  .article .article-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .article .article-cards .card {
+    width: 336px;
+    height: 100%;
+  }
+  .article .article-cards .card img {
+    width: 336px;
+    height: 102px;
+  }
+  .article .article-cards .card span {
+    font-size: 8px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .article .article-cards .card h5 {
+    width: 336px;
+    height: 48px;
+    font-size: 16px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .article .article-cards .card p {
+    margin-bottom: 20px;
+    width: 316px;
+    height: 54px;
+    font-size: 12px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+#main_footer {
+  height: 0px;
+  background-color: #F9F4E2;
+  background-image: url(../../assets/images/footer/bg-footer.svg);
+}
+#main_footer .main_footer {
+  padding-top: 37px;
+  display: flex;
+}
+#main_footer .main_footer .logo {
+  margin-right: 40px;
+}
+#main_footer .main_footer .about-us {
+  padding-top: 15px;
+  margin-right: 110px;
+  display: flex;
+}
+#main_footer .main_footer .about-us ul {
+  gap: 40px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+#main_footer .main_footer .about-us ul li {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+#main_footer .main_footer .social-media {
+  margin-right: 40px;
+  gap: 20px;
+  display: flex;
+}
+#main_footer .main_footer .social-media div {
+  display: flex;
+  gap: 20px;
+}
+#main_footer .main_footer .contact-us {
+  display: flex;
+  flex-direction: column;
+}
+#main_footer .main_footer .contact-us .number {
+  padding-top: 15px;
+  gap: 10px;
+  display: flex;
+}
+#main_footer .main_footer .contact-us .number a {
+  color: #414141;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+}
+#main_footer .main_footer .contact-us .founder {
+  padding-top: 15px;
+  gap: 5px;
+  display: flex;
+}
+#main_footer .main_footer .contact-us .founder .designer {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+#main_footer .main_footer .contact-us .founder .name {
+  font-family: "Vollkorn SC";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+@media (max-width: 1150px) {
+  .main_footer .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_footer .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 860px) {
+  #main_footer {
+    margin-bottom: 350px;
+  }
+  #main_footer .main_footer {
+    display: flex;
+    justify-content: center;
+  }
+  #main_footer .main_footer .logo {
+    display: inline-block;
+    width: 93px;
+    height: 64px;
+  }
+  #main_footer .main_footer .about-us {
+    margin-top: 128px;
+    position: absolute;
+  }
+  #main_footer .main_footer .about-us ul {
+    display: flex;
+    gap: 16px;
+  }
+  #main_footer .main_footer .social-media {
+    margin-right: 34px;
+    display: flex;
+    flex-direction: row;
+  }
+  #main_footer .main_footer .contact-us {
+    position: absolute;
+  }
+  #main_footer .main_footer .contact-us .number {
+    margin-left: 100px;
+    margin-top: 38px;
+  }
+  #main_footer .main_footer .contact-us .founder {
+    display: none;
+  }
+}

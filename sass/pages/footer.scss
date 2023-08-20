@@ -1,0 +1,186 @@
+@use '../../global';
+
+// footer {
+//     height: 126px;
+//     background-color: #F9F4E2;
+//     background-image: url(../../assets/images/footer/bg-footer.svg);
+//     .footer {
+//         padding-top: 37px;
+//         display: flex;
+//         .logo {
+//             margin-right: 40px;
+//         }
+//         .about-us {
+//             padding-top: 15px;
+//             margin-right: 110px;
+//             display: flex;
+//             ul {
+//                 gap: 40px;  
+//                 display: flex;
+//                 li {
+//                     font-family: 'Rubik';
+//                     font-style: normal;
+//                     font-weight: 400;
+//                     font-size: 12px;
+//                     line-height: 150%;
+//                 }
+//             }
+//         }
+//        .social-media {
+//         margin-right: 40px;
+//         gap: 20px;
+//         display: flex;
+//         div {
+//             display: flex;
+//             gap: 20px;
+
+//         }
+//        }
+//        .contact-us {    
+//         display: flex;
+//         flex-direction: column;
+//         .number {
+//             padding-top: 15px;
+//             gap:10px;
+//             display: flex;
+//             a {
+//                 color:  #414141;
+//                 font-family: 'Rubik';
+//                 font-style: normal;
+//                 font-weight: 400;
+//                 font-size: 15px;
+//                 line-height: 150%;
+//             }
+//         }
+//         .founder {
+//             padding-top: 15px;
+//             gap: 5px;
+//             display: flex; 
+//             .designer {
+//                 font-family: 'Rubik';
+//                 font-style: normal;
+//                 font-weight: 400;
+//                 font-size: 12px;
+//                 line-height: 150%;
+//             } 
+//             .name {
+//                 font-family: 'Vollkorn SC';
+//                 font-style: normal;
+//                 font-weight: 800;
+//                 font-size: 12px;
+//                 line-height: 150%;
+//             }
+//         }
+//        }
+//     }
+// }
+
+// @media (max-width:1150px) {
+// .footer {
+//     .about-us {
+//         display: flex;
+//         flex-direction: column;
+//     }
+//     .social-media {
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }
+// }
+
+// @media (max-width:860px) {
+//     footer {
+//         height: 263px;
+//         .footer {
+//             display: flex;
+//             justify-content: center;
+//             .logo {
+//                 display: inline-block;
+//                 width: 93px;
+//                 height: 64px;
+//             }
+//             .about-us {
+//                 margin-top: 128px;
+//                 position: absolute;
+//                 ul {
+//                 display: flex;
+//                 gap: 16px;
+//                 }
+//             }
+//             .social-media {
+//                 margin-right: 34px;
+//                 display: flex;
+//                 flex-direction: row;
+//             }
+//             .contact-us {
+//                 position: absolute;
+//                 .number {
+//                     margin-left: 100px;
+//                     margin-top: 38px;
+//                   }
+//                   .founder {
+//                       display: none;
+//                   }
+//             }
+//         }
+//     }
+// }
+
+footer {
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    .footer {
+             display: flex;
+             height: 80px;
+             padding: 0px 16px;
+             padding-top: 20px;
+             justify-content: space-between;
+             align-items: center;
+            //  flex-shrink: 0;
+             background: var(--surface, #FFF);
+             box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+             ul {
+                 display: flex;
+                 align-items: center;
+                 gap: auto;
+                 li {
+                    margin-top: -30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    img {
+                        display: inline-block;
+                        width: 34px;
+                        height: 34px;
+                    }
+                    .avatar {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    span {
+                        margin-top: 50px;
+                        color: #414141;
+                        text-align: center;
+                        font-family: 'Rubik';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 12px;
+                    }
+                 }
+             }
+         }
+}
+
+@media(min-width:500px) {
+    footer {
+        display: none;
+    }
+}

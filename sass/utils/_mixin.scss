@@ -1,0 +1,39 @@
+// ...
+@mixin btn() {
+
+}
+
+@mixin primary-btn() {
+
+}
+
+@mixin secondary-btn() {
+
+}
+ 
+
+
+@mixin title-1 {
+    @include title(700, var.$h1, 64px, var.$white);
+  }
+  
+  @mixin title-2 {
+    @include title(700, var.$h2, 64px);
+  }
+  
+  @mixin title-3 {
+    @include title(700, var.$h3, 50px);
+  }
+  
+  @mixin title-4 {
+    @include title(700, var.$h4, 44px);
+  }
+  
+  @mixin title-5 {
+    @include title(700, var.$h5, 28px);
+  }
+  
+  @mixin title-6 {
+    @include title(400, var.$h6, 19px);
+  }
+  
